@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding-top: 70px;  /* Adjust based on actual navbar height */
+}
+
+html {
+  scroll-padding-top: 70px; /* Adjust to match your nav height prevent the thing hiding behoe the top nav */
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  z-index: 999;
+  background-color: rgb(118, 52, 5);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+}
+
+
+.topnav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+
+.logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+/* When active (dropdown open) */
+.nav-links.responsive {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px; /* Large enough to show full menu */
+}
+
+/* Slide-up animation */
+.nav-links.slide-up {
+  max-height: 0 !important;
+}
+
+/* Slide-down animation */
+.nav-links.slide-down {
+  max-height: 500px;
+}
+
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+.nav-links a:hover {
+  color: #f9f9f9e6;
+}
+
+/* Hamburger icon hidden by default */
+.icon {
+  display: none; /* hidden by default */
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+  color: #000; /* icon color */
+}
+
+/* Mobile view */
+@media screen and (max-width: 1000px) {
+  .icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(118, 52, 5);
+    margin-top: 10px;
+  }
+
+  .topnav.responsive .nav-links {
+    display: flex;
+  }
+}

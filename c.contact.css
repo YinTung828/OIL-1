@@ -1,0 +1,49 @@
+.contact-info {
+  padding: 20px;
+  background-color: gold;
+  font-family: Arial, sans-serif;
+}
+.contact-info h2 {
+  
+  margin-top: 0;
+}
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+.site-footer {
+  background-color: rgb(118, 52, 5); /* sets the background color */
+  color: #ffffff; /* white text for contrast */
+  text-align: center;
+  padding: 15px 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+
+
+
+
+/*About*/
+.about-container {
+  display: flex;
+  justify-content: flex-end; /* move content to the right */
+  align-items: center;       /* center vertically */
+  height: 100vh;
+  background-color: gold;
+  padding-right: 50px;       /* optional: adds some spacing from the edge */
+}
+
+.about-us, .mission,.facility, .PRODUCT, .GOVERNMENT  {
+  padding: 30px;
+  background-color: gold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  word-spacing: 1.5px; /* sets space between words */
+  line-height: 1.8;        /* space between lines (vertical spacing) */
+}
+
+
